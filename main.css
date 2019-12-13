@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* min-width: 400px; */
+    /* overflow-y: overlay; */
+  }
+  
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 10%;
+  padding: 10px;
+  color: white;
+}
+
+.App h1 {
+  font-size: 1.7em;
+  color: #000;
+}
+
+.App-intro {
+  font-size: large;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: 45px 40px 60px 60px 60px 60px;
+}
+
+.result_operation-wrap{
+  grid-column: span 4 ;
+  grid-row: span 2;
+  background: rgb(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  grid-template-rows: 24px 24px 8px 22px;
+  font-size: 1.2rem;
+  color: white;
+}
+.operand{
+grid-row:2;
+grid-column: 1;
+}
+.previousTyped{
+grid-column: 2;
+grid-row: 1;
+}
+
+.currentTyping{
+grid-row:2;
+grid-column: 2;
+}
+
+hr{
+grid-column:span 2;
+grid-row: 3;
+width: 95%;
+height: 1px;
+background-color:white;
+margin:6px;
+}
+
+.result{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+
+.container button{
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 1px white solid;
+}
+
+.container button:focus{
+  outline: none;
+  background-color: white;
+}
+
+.container button:active{
+background-color: rgb(0,0,0,0.75);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,107 @@
+.container {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 10%;
+  padding: 10px;
+  color: white;
+}
+
+.container h1 {
+  font-size: 1.7rem;
+  color: #000;
+  margin: 10px auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.container {
+  height: 88%;
+}
+
+#calculater {
+  width: 340px;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(205, 241, 232);
+  border-radius: 2px;
+}
+
+#result-display {
+  height: 35%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.40);
+  border: 1px #fff solid;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+#prevTyped-div, #currentTyping-div{
+  flex: 1;
+}
+#prevTyped {
+  margin: 2px;
+  padding: 10px;
+  font-size: 1.0rem;
+}
+
+#currentTyping {
+  margin: 2px;
+  padding: 10px;
+  font-size: 1.9rem;
+
+}
+
+#buttons{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  padding: 1px;
+
+}
+
+.container .button-style {
+  border: 1px white solid;
+  width: 98%;
+  height: 98%;
+  background: linear-gradient(to left, rgb(17, 52, 85), rgb(53, 51, 51));
+  border: none;
+  margin: 1px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.button-style:hover{
+  background: linear-gradient(to left, #fff, #222);
+}
+
+.button-style:nth-child(1){
+  background: linear-gradient(to right, rgb(81, 147, 209), rgb(59, 14, 221));
+}
+.button-style:nth-child(2){
+  background: linear-gradient(to left, rgb(81, 147, 209), rgb(59, 14, 221));
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,47 @@
+state={
+button:[
+{value: 0 , name: '0'},
+{value: 1 , name: '1'},
+{value: 2 , name: '2'},
+{value: 3 , name: '3'},
+{value: 4 , name: '4'},
+{value: 5 , name: '5'},
+{value: 6 , name: '6'},
+{value: 7 , name: '7'},
+{value: 8 , name: '8'},
+{value: 9 , name: '9'},
+{value: 0 , name: '0'},
+{value: "plus" , name: '+'},
+{value: "minus" , name: '-'},
+{value: "multi" , name: '*'},
+{value: "divide" , name: '/'},
+{value: "equal" , name: '='},
+]
+
+}
+
+addNumberHandler = (value) => {
+	const buttonIndex = this.state.button.findIndex(buttons=>{
+	return buttons.value === buttons.value;
+	});
+	const buttons = {...this.state.button[buttonIndex]};
+
+}
+
+this.state.button.map((buttons, index) => {
+	return <button 
+	value={buttons.value}
+	onClick={()=this.addNumber(buttons.value)}
+	key={buttons.value}>{buttons.name}</button>
+} );
+
+
+if(value === "plus"){
+
+
+}
+
+if(this.state.button[0].value === "plus"){
+	
+
+}
